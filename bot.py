@@ -21,7 +21,7 @@ def bop(bot, update):
     bot.send_photo(chat_id=chat_id, photo=url, caption="Everytime You'll see a Cute Dog!")
 
 def main():
-    updater = Updater('886706727:AAHQpxEhH18lXohUCVWFxhl1blFgkW4AsDg')
+    updater = Updater('yourToken_Here')
     dp = updater.dispatcher
     dp.add_handler(CommandHandler('bop',bop))
     updater.start_polling()
